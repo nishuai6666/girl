@@ -1,12 +1,16 @@
 spring:
   profiles:
-    active: prod
+    active: dev
+  #数据库信息
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.0.50:3306/haigou
     username: root
     password: root
+  #
   jpa:
     hibernate:
-      ddl-auto: create
+      #每次程序运行时create都会重新创建表，如果原来表中有数据会被清掉
+      #如果是update时，就不会删除信息。其他还有三个属性
+      ddl-auto: update
     show-sql: true
