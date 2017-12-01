@@ -1,4 +1,4 @@
-package com.nsproject.girl;
+package com.nsproject.girl.propertise;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
